@@ -1,0 +1,9 @@
+.navbar.navbar-fixed-top.navbar-default
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle type="button" data-toggle="collapse" data-target=".navbar-collapse"
+        span.icon-bar
+      = link_to 'APP_NAME', root_path, class: "navbar-brand"
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav
+        li = link_to 'Домашняя страница', root_path

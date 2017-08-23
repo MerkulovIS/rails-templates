@@ -1,0 +1,14 @@
+.row
+  /.col-sm-8.col-sm-offset-2
+  - if notice
+    br
+    .alert.alert-success.alert-dismissible role="alert"
+      button.close type="button" data-dismiss="alert" aria-label="Close"
+        span aria-hidden="true" &times;
+      = notice
+  - if alert
+    br
+    .alert.alert-warning.alert-dismissible role="alert"
+      button.close type="button" data-dismiss="alert" aria-label="Close"
+        span aria-hidden="true" &times;
+      = alert

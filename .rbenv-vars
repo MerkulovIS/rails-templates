@@ -1,0 +1,6 @@
+DB_HOST=localhost
+DB_NAME=my_temp
+DB_USER=merk
+DB_PWD=
+SECRET_KEY_BASE=
+RAILS_SERVE_STATIC_FILES=true

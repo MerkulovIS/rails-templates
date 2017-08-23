@@ -1,0 +1,15 @@
+= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'form-single' }) do |f|
+  h1.form-signin-heading = t('login')
+  .field
+    = f.label :login, class: 'sr-only'
+    = f.text_field :login, autofocus: true, class: 'first form-control', placeholder: t('user')
+    = f.label :password, class: 'sr-only'
+    = f.password_field :password, autocomplete: 'off', class: 'last bottom form-control', placeholder: t('password')
+  - if devise_mapping.rememberable?
+    .field
+      .checkbox
+        = f.label :remember_me do
+          = f.check_box :remember_me
+          span = t('remember_me')
+  .actions
+    = f.submit t('log_in'), class: 'btn btn-lg btn-primary btn-block'
