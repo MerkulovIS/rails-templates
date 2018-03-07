@@ -1,7 +1,7 @@
   devise :ldap_authenticatable, :trackable, :timeoutable #, authentication_keys: [:login]
 
   def timeout_in
-    15.minutes
+    1.day
   end
 
   def get_ldap_param(param)

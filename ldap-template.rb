@@ -49,7 +49,7 @@ open('.gitignore', 'a') do |f|
 end
 
 
-file 'config/locales/ru.yml', from_src('ru.yml')
+file 'config/locales/devise.ru.yml', from_src('devise.ru.yml')
 inject_into_file 'config/application.rb', after: 'config.generators.system_tests = nil' do
   "\n    config.i18n.default_locale = :ru"
 end
